@@ -2,6 +2,9 @@ $headerFont: 'Signika', sans-serif;
 $mainFont: 'Questrial', sans-serif;
 $white: #fff;
 $logoColor: #e5ad22;
+$menuBackground: #272c34;
+$offWhite: #F4F4F4;
+$brownColor: #8D735F;
 
 * {
     margin: 0;
@@ -30,7 +33,7 @@ body {
         letter-spacing: 2px;
         
         .logo-split {
-            border: 1px solid #3D3D3D;
+            border: 1px solid #8D735F;
             margin-top: 2px;
             margin-bottom: 0;
         }
@@ -64,10 +67,171 @@ body {
     }
 }
 
+/*================THREE SECTION==============*/
+
 .three-section {
-    position: relative;
-    .three-section img {
-        height: 240px;
-        width: 364px;
+    .section-img {
+        position: relative;
+        .three-img {
+            max-height: 240px;
+            width: 364px;
+        }
+        
+        .section-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $white;
+            letter-spacing: 2px;
+            font-size: 25px;
+            text-transform: uppercase;
+        }
+    }
+  
+}
+
+/*================NEWSLETTER SECTION==============*/
+
+.newsletter {
+    margin-top: 50px;
+    background-color: #E8E8E8;
+    padding-bottom: 75px;
+
+    .news-title {
+        text-transform: uppercase;
+        margin-top: 50px;
+    }
+
+    .news-description {
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        margin-top: 5px;
+    }
+
+    .form-group {
+        display: inline-block;
+        width: 40%;
+        margin: 0 auto;
+        
+        input {
+            outline: 0;
+            border-width: 0 0 2px 0;
+            border-color: black;
+            background-color: #E8E8E8;
+            padding: 10px;
+            border-radius: 0;
+        }
+    }
+
+    .subscribe-btn {
+        display: inline-block;
+        background-color: $logoColor;
+        text-transform: uppercase;
+        padding: 10px 32px;
+        margin-left: 25px;
+        border-radius: none;
+        border: none;
+    }
+}
+
+/*================MENU SECTION==============*/
+
+.menu {
+    background-color: $menuBackground;
+    color: $offWhite;
+    
+    h1 {
+        padding-top: 30px;
+        text-transform: uppercase;
+        font-family: $headerFont;
+    }
+    .menu-desc {
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    .menu-header {
+        color: $logoColor;
+        font-family: $headerFont;
+         display: inline-block;
+    }
+
+    .menu-item, .menu-line, .menu-price {
+        display: inline-block;
+    }
+
+    .menu-item h3{
+        font-size: 18px;
+        margin-left: 10px;
+        text-transform: uppercase;
+    }
+    
+    .menu-line {
+        border-bottom: 1px solid rgba(141,115,95,.5);
+        height: 3px;
+        width: 30%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .menu-price {
+        font-size: 20px;
+        font-weight: 100;
+        color: $brownColor;
+    }
+
+    .menu-item-desc {
+        font-family: sans-serif;
+        font-size: 14px;
+        width: 400px;
+        font-weight: 100;
+        display: inline-block;
+    }
+
+}
+
+/*================TESTIMONIALS SECTION==============*/
+
+.testimonials {
+    background: url('../img/testimonial.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 500px;
+    padding-bottom: 80px;
+
+    .test-title {
+        color: $white;
+    }
+
+    .test-desc {
+        background-color: $white;
+        margin-top: 80px;
+        max-width: 400px;
+        height: 300px;
+        position: relative;
+        border-radius: 5px;
+        
+        .test-quote {
+            position: absolute;
+            min-width: 75%;
+            left: 50px;
+            top: 60px;
+        }
+
+        .testimonial-pic {
+            position: absolute;
+            top: 160px;
+            left: 50px;
+        }
+
+        h4 {
+            position: absolute;
+            left: 150px;
+            top: 200px;
+            font-size: 20px;
+        }
     }
 }

@@ -20,7 +20,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px; }
     .header-background .navbar-brand .logo-split {
-      border: 1px solid #3D3D3D;
+      border: 1px solid #8D735F;
       margin-top: 2px;
       margin-bottom: 0; }
     .header-background .navbar-brand .cafe {
@@ -44,8 +44,121 @@ body {
     font-size: 12px;
     padding: 15px 35px; }
 
-.three-section {
+/*================THREE SECTION==============*/
+.three-section .section-img {
   position: relative; }
-  .three-section .three-section img {
-    height: 240px;
+  .three-section .section-img .three-img {
+    max-height: 240px;
     width: 364px; }
+  .three-section .section-img .section-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 25px;
+    text-transform: uppercase; }
+
+/*================NEWSLETTER SECTION==============*/
+.newsletter {
+  margin-top: 50px;
+  background-color: #E8E8E8;
+  padding-bottom: 75px; }
+  .newsletter .news-title {
+    text-transform: uppercase;
+    margin-top: 50px; }
+  .newsletter .news-description {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 5px; }
+  .newsletter .form-group {
+    display: inline-block;
+    width: 40%;
+    margin: 0 auto; }
+    .newsletter .form-group input {
+      outline: 0;
+      border-width: 0 0 2px 0;
+      border-color: black;
+      background-color: #E8E8E8;
+      padding: 10px;
+      border-radius: 0; }
+  .newsletter .subscribe-btn {
+    display: inline-block;
+    background-color: #e5ad22;
+    text-transform: uppercase;
+    padding: 10px 32px;
+    margin-left: 25px;
+    border-radius: none;
+    border: none; }
+
+/*================MENU SECTION==============*/
+.menu {
+  background-color: #272c34;
+  color: #F4F4F4; }
+  .menu h1 {
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-family: "Signika", sans-serif; }
+  .menu .menu-desc {
+    width: 65%;
+    margin: 0 auto; }
+  .menu .menu-header {
+    color: #e5ad22;
+    font-family: "Signika", sans-serif;
+    display: inline-block; }
+  .menu .menu-item, .menu .menu-line, .menu .menu-price {
+    display: inline-block; }
+  .menu .menu-item h3 {
+    font-size: 18px;
+    margin-left: 10px;
+    text-transform: uppercase; }
+  .menu .menu-line {
+    border-bottom: 1px solid rgba(141, 115, 95, 0.5);
+    height: 3px;
+    width: 30%;
+    margin-left: 5px;
+    margin-right: 5px; }
+  .menu .menu-price {
+    font-size: 20px;
+    font-weight: 100;
+    color: #8D735F; }
+  .menu .menu-item-desc {
+    font-family: sans-serif;
+    font-size: 14px;
+    width: 400px;
+    font-weight: 100;
+    display: inline-block; }
+
+/*================TESTIMONIALS SECTION==============*/
+.testimonials {
+  background: url("../img/testimonial.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 500px;
+  padding-bottom: 80px; }
+  .testimonials .test-title {
+    color: #fff; }
+  .testimonials .test-desc {
+    background-color: #fff;
+    margin-top: 80px;
+    max-width: 400px;
+    height: 300px;
+    position: relative;
+    border-radius: 5px; }
+    .testimonials .test-desc .test-quote {
+      position: absolute;
+      min-width: 75%;
+      left: 50px;
+      top: 60px; }
+    .testimonials .test-desc .testimonial-pic {
+      position: absolute;
+      top: 160px;
+      left: 50px; }
+    .testimonials .test-desc h4 {
+      position: absolute;
+      left: 150px;
+      top: 200px;
+      font-size: 20px; }
