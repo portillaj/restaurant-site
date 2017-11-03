@@ -1,32 +1,25 @@
 const gulp = require("gulp");
-const browserSync = require("browser-sync").create();
 const sass = require("gulp-sass");
 
 //Compile Sass & Inject into browserSync
 gulp.task('sass', function(){
   return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'])
   .pipe(sass())
-  .pipe(gulp.dest("src/css"))
-  .pipe(browserSync.stream());
+  .pipe(gulp.dest("src/css"));
 });
 
 //move js files to src/js
 gulp.task('js', function(){
   return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js',
 'node_modules/popper.js/dist/umd/popper.min.js'])
-.pipe(gulp.dest("src/js"))
-.pipe(browserSync.stream());
+.pipe(gulp.dest("src/js"));
 });
 
 //Watch Sass & Server
 gulp.task('serve', ['sass'], function(){
-  browserSync.init({
-    server: "./src",
-    open: false
-  });
 
   gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'], ['sass']);
-  gulp.watch(['src/*.html']).on('change', browserSync.reload);
+  gulp.watch(['src/*.html']);
 });
 
 //Move Fonts folder to src
