@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "index.html"
+    "start": "node app",
+    "postinstall": "gulp default"
   },
   "repository": {
     "type": "git",
