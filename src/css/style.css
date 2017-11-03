@@ -7,6 +7,17 @@ body {
   font-family: "Questrial", sans-serif; }
 
 /*=================HEADER SECTION==================*/
+.logo-split {
+  border: 1px solid #8D735F;
+  margin-top: 2px;
+  margin-bottom: 0; }
+
+.cafe {
+  display: block;
+  text-align: center;
+  color: #e5ad22;
+  letter-spacing: 4px; }
+
 .header-background {
   background: url("../img/main-back.jpg");
   background-repeat: no-repeat;
@@ -19,15 +30,6 @@ body {
     padding: 10px;
     text-transform: uppercase;
     letter-spacing: 2px; }
-    .header-background .navbar-brand .logo-split {
-      border: 1px solid #8D735F;
-      margin-top: 2px;
-      margin-bottom: 0; }
-    .header-background .navbar-brand .cafe {
-      display: block;
-      text-align: center;
-      color: #e5ad22;
-      letter-spacing: 4px; }
   .header-background .nav-item {
     color: #fff;
     font-size: 1.3rem; }
@@ -48,16 +50,15 @@ body {
 .three-section .section-img {
   position: relative; }
   .three-section .section-img .three-img {
-    max-height: 240px;
-    width: 364px; }
+    min-height: auto; }
   .three-section .section-img .section-title {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
+    color: #e5ad22;
     letter-spacing: 2px;
-    font-size: 25px;
+    font-size: 28px;
     text-transform: uppercase; }
 
 /*================NEWSLETTER SECTION==============*/
@@ -144,14 +145,14 @@ body {
   .testimonials .test-desc {
     background-color: #fff;
     margin-top: 80px;
-    max-width: 400px;
-    height: 300px;
+    max-width: 100%;
+    min-height: 300px;
     position: relative;
     border-radius: 5px; }
     .testimonials .test-desc .test-quote {
       position: absolute;
       min-width: 75%;
-      left: 50px;
+      left: 10%;
       top: 60px; }
     .testimonials .test-desc .testimonial-pic {
       position: absolute;
@@ -162,3 +163,71 @@ body {
       left: 150px;
       top: 200px;
       font-size: 20px; }
+
+footer {
+  background-color: #2A2A2A;
+  color: #fff; }
+  footer h1 {
+    margin-top: 40px; }
+  footer .footer-contact {
+    font-size: 20px;
+    margin-top: 40px; }
+  footer p {
+    font-size: 14px;
+    color: #656565; }
+  footer i {
+    padding: 5px; }
+  footer .fa-facebook-square {
+    color: #3B5998; }
+  footer .fa-instagram {
+    color: #e4405f; }
+  footer .fa-twitter-square {
+    color: #55acee; }
+
+.sponsors {
+  background: #E4E4E4; }
+  .sponsors .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+    .sponsors .helper img {
+      vertical-align: middle; }
+
+.contact-form {
+  background: #272c34;
+  color: #fff;
+  padding: 100px 0; }
+  .contact-form .city {
+    margin-top: 50px;
+    font-family: sans-serif;
+    font-weight: 100; }
+  .contact-form .email, .contact-form .phone {
+    color: #8D735F;
+    margin-right: 10px; }
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    margin-bottom: 40px;
+    background: none;
+    border: 1px solid #808285;
+    height: 40px;
+    padding-left: 15px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 100; }
+  .contact-form input:focus, .contact-form textarea:focus {
+    outline: 1px solid #8D735F; }
+  .contact-form .send-btn {
+    padding: 15px 40px;
+    background: #8D735F;
+    border: none;
+    color: #fff;
+    font-size: 18px; }
+  .contact-form .send-btn:hover {
+    background: #5E5148;
+    transition-duration: 0.3s; }
+  .contact-form textarea {
+    height: 200px; }
+
+@media (max-width: 768px) {
+  .sponsors {
+    display: none; } }
