@@ -42,11 +42,3 @@ gulp.task('fa', function(){
 });
 
 gulp.task('default', ['js', 'serve', 'fa', 'fonts']);
-
-gulp.task('serveprod', function() {
-  connect.server({
-    root: "./src",
-    port: process.env.PORT || 5000, // localhost:5000
-    livereload: false
-  });
-});
