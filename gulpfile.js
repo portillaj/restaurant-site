@@ -22,7 +22,7 @@ gulp.task('js', function(){
 gulp.task('serve', ['sass'], function(){
   browserSync.init({
     server: "./src",
-    open: config.browserSync.openAutomatically
+    open: false
   });
 
   gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'], ['sass']);
