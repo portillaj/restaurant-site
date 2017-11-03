@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "gulp",
-    "postinstall": "gulp default"
+    "start": "nodemon app.js",
+    "heroku-postbuild": "gulp"
   },
   "repository": {
     "type": "git",
